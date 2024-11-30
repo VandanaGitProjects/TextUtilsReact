@@ -27,3 +27,6 @@ git remote add origin https://github.com/VandanaGitProjects/TextUtilsReact.git
 git branch -M main
 git push -u origin main
  
+
+
+ "homepage": "https://vandanagitprojects.github.io/TextUtilsReact/",
