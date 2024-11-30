@@ -4,8 +4,8 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//import { Route, Routes, Router } from "react-router-dom";
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -60,7 +60,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <HashRouter>
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container">
@@ -86,7 +86,7 @@ function App() {
             </Route> */}
           </Routes>
         </div>
-      </Router>
+      </HashRouter>
     </>
   );
 }
