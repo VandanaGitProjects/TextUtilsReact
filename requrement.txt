@@ -1,0 +1,28 @@
+create repository on github
+npm install gh-pages
+
+// add this in package.json in script
+"predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
+
+
+git init
+git add .
+git remote add origin https://github.com/VandanaGitProjects/Textutils.git
+npm run deploy
+-------------------------------------------------------------
+…or create a new repository on the command line
+echo "# TextUtilsReact" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+ git remote rm origin /// if  remote origin already exists error
+git remote add origin https://github.com/VandanaGitProjects/TextUtilsReact.git
+git push -u origin main
+
+
+or push an existing repository from the command line
+git remote add origin https://github.com/VandanaGitProjects/TextUtilsReact.git
+git branch -M main
+git push -u origin main
